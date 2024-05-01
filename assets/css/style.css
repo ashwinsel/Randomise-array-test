@@ -1,0 +1,230 @@
+/* setting deafult edges to null */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'karma', 'playfair', sans-serif;
+  }
+  
+  row,
+  container,
+  container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body, html {
+      height: 100%;
+    }
+    
+    .page {
+      background-color: #dedbdb;  
+      height: 150%;      
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    /*Styling Quiz Header*/
+    .title{
+      -webkit-text-emphasis-color: #900a0a;
+     text-emphasis-color: #900a0a;
+     float: left;
+     font-family: "Lugrasimo", cursive;
+     font-weight: 500;   
+     color: #0C3D40;
+     margin-top: 30px;
+     margin-left: 50px;
+  
+    }
+  
+    /* Styling Modal buttons */
+    div#instructions.modal {
+      display: none;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      z-index: 10;
+      top: 10%;
+      left: 50%;  
+      height: 56%;
+      width: 50%;    
+      transform: translate(-51%, -3%);
+      transition: 500ms ease-in-out;
+      overflow: auto;
+      border: 0.5px solid #800707;
+      border-radius: 6px;    
+      padding-left: 5%;
+    }
+  
+    button.btn {
+      font-family: "Lugrasimo", cursive;
+      font-size: small;
+      color:#ea070b;
+    }
+  
+  
+    
+    .close {
+      color: #ffffff;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  
+  
+  
+    /* Styling menu elements */
+    .menu-items {
+      float: right;
+      margin-top: 55px;
+      margin-right: 50px;
+      font-family: 'karma', sans-serif;
+      color: #f9fbfb;  
+        
+    }
+  
+    .menu-items li {
+      background-color: #0C3D40;
+    }
+  
+  /**Stylize Quiz box**/
+  main.container-fluid {
+   
+    height: 80vh;
+    border: 1px solid #000000;
+    
+    overflow: hidden;
+    position: relative;
+    padding: 42px;
+  
+  }
+  
+  .question-box {
+    font-family: "Space Mono", monospace;
+    background-color: rgba(248, 216, 100, 0.8);
+    color: rgb(4, 4, 4);
+    height: 10vh;
+    border: 0.5px solid #800707;
+    border-radius: 6px;
+  
+  }
+  
+  
+  
+  p.ans{
+    width: 42%;
+    cursor: pointer;
+  }
+  
+  .ans
+    {
+       background-color: rgba(248, 216, 100, 0.6);              
+       height:6vh;
+       border: 0.5px solid #800707;
+       border-radius: 6px;
+       text-align: center;
+       
+     }
+  
+     .green {
+      background-color: green;
+     }
+  
+     .red {
+      background-color: #ea070b;
+     }
+  
+     
+  
+     
+    
+     #next {
+       background-color: rgba(248, 216, 100, 0.8);
+       color: rgb(19, 21, 22);
+       font-size:20px; 
+       text-align: center;    
+       height: 5vh;
+       max-width: max-content;
+       border: 0.5px solid #800707;
+       border-radius: 6px;
+       transition: all 0.2ms;
+       
+     }
+  
+     #next:hover {
+      background-color: #dedbdb;
+     }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Styling for responsive UX */
+  
+  /* For larger to medium screens size from 1300px wide and down */
+  @media screen and (max-width: 1500px) { 
+    .title{    
+      text-emphasis-color: #900a0a;   
+      font-family: "Lugrasimo", cursive;    
+      color: #0C3D40;
+     }
+  .container {
+    width: 60%;
+    }
+  }
+  /* For small screen sizes from 768px wide and down */
+  @media screen and (max-width: 768px) {
+    .title{    
+     text-emphasis-color: #900a0a;   
+     font-family: "Lugrasimo", cursive;    
+     color: #0C3D40;
+    }
+    .ans {
+      margin-left: 0%;
+      width: 100%;
+    } 
+    .container {
+       width: 22.875rem;
+       height: -webkit-fit-content;
+       height: -moz-fit-content;
+       height: fit-content;
+    }
+    .container {
+       width: 63%;
+       height: 95%;
+    }
+  
+  }
+  
+  
+  /* For very small screen sizes from 450px wide and down */
+  @media screen and (max-width: 450px) {
+    /* index.html page */
+    .title{    
+      text-emphasis-color: #900a0a;   
+      font-family: "Lugrasimo", cursive;    
+      color: #0C3D40;
+     }
+    .container {
+       font-size: 236%;
+       margin-left: 25px;
+       margin-bottom: -3.5rem;
+  
+    }
+  }
+  
+  /* For very small screen */
+  @media screen and (max-width: 320px) {
+    h1.title{    
+      text-emphasis-color: #900a0a;   
+      font-family: "Lugrasimo", cursive;    
+      color: #0C3D40;
+     }
+  
+  }

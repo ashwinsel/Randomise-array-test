@@ -71,122 +71,102 @@ function resetGame() {
     // Hide the next button
     nextButton.style.display = "none";
 }
+// the quiz script
 
+// question object
 
 const question = [{
-    question: "Which mighty bird serves as the vehicle of Lord Vishnu?",
-    answers: [
-        {ans: "Peacock", result: false},
-        {ans: "Parrot", result: false},
-        {ans: "Kite", result: true},
-        {ans: "Sparrow", result: false},
-    ]
-},
-{
-    question: "The epic Ramayana tells the tale of Rama's battle against which demon king?",
-    answers: [
-        {ans: "Ravana", result: true},
-        {ans: "Duryodhana", result: false},
-        {ans: "Shiva", result: false},
-        {ans: "Mahishasura", result: false},
-    ]
-},
-{
-    question: "The powerful weapon Trishul is associated with which deity?",
-    answers: [
-        {ans: "Brahma", result: false},
-        {ans: "Shiva", result: true},
-        {ans: "Vishnu", result: false},
-        {ans: "Ganesha", result: false},
-    ]
-},
-{
-    question: "Which Hindu festival celebrates the victory of good over evil and the triumph of Lord Rama over Ravana?",
-    answers: [
-        {ans: "Holi", result: false},
-        {ans: "Dusshera", result: true},
-        {ans: "Janmasthami", result: false},
-        {ans: "Diwali", result: false},
-    ]
-},
-{
-    question: "What is the name of the celestial weapon wielded by Lord Vishnu?",
-    answers: [
-        {ans: "Sudarshana Chakra", result: true},
-        {ans: "Vajra", result: false},
-        {ans: "Spear", result: false},
-        {ans: "Trident", result: false},
-    ]
-},
-{
-    question: "Nandi the mount of Shiva is represented by what animal?",
-    answers: [
-        {ans: "Mouse", result: false},
-        {ans: "Monkey", result: false},
-        {ans: "Bull", result: true},
-        {ans: "Lion", result: false},
-    ]
-},
-{
-    question: "What is the sacred abode of lord Vishnu?",
-    answers: [
-        {ans: "Ocean", result: true},
-        {ans: "Mars", result: false},
-        {ans: "Himalayas", result: false},
-        {ans: "The Sun", result: false},
-    ]
-},
-{
-    question: "Who is the goddess of wealth and prosperity in Hindu Mythology?",
-    answers: [
-        {ans: "Saraswati", result: false},
-        {ans: "Kali", result: false},
-        {ans: "Lakshmi", result: true},
-        {ans: "Parvati", result: false},
-    ]
-},
-{
-    question: "What does Krishna adornes on his head gear?",
-    answers: [
-        {ans: "Peacock feather", result: true},
-        {ans: "Gold Leaf", result: false},
-        {ans: "Pearl", result: false},
-        {ans: "Kohinoor Diamond", result: false},
-    ]
-},
-{
-    question: "Krishna is beleived to be an incarnation of which god?",
-    answers: [
-        {ans: "Brahma", result: false},
-        {ans: "Shiva", result: false},
-        {ans: "Vishnu", result: true},
-        {ans: "Indra", result: false},
-    ]
-},
+        question: "Which mighty bird serves as the vehicle of Lord Vishnu?",
+        answers: [
+            {ans: "Peacock", result: false},
+            {ans: "Parrot", result: false},
+            {ans: "Kite", result: true},
+            {ans: "Sparrow", result: false},
+        ]
+    },
+    {
+        question: "The epic Ramayana tells the tale of Rama's battle against which demon king?",
+        answers: [
+            {ans: "Ravana", result: true},
+            {ans: "Duryodhana", result: false},
+            {ans: "Shiva", result: false},
+            {ans: "Mahishasura", result: false},
+        ]
+    },
+    {
+        question: "The powerful weapon Trishul is associated with which deity?",
+        answers: [
+            {ans: "Brahma", result: false},
+            {ans: "Shiva", result: true},
+            {ans: "Vishnu", result: false},
+            {ans: "Ganesha", result: false},
+        ]
+    },
+    {
+        question: "Which Hindu festival celebrates the victory of good over evil and the triumph of Lord Rama over Ravana?",
+        answers: [
+            {ans: "Holi", result: false},
+            {ans: "Dusshera", result: true},
+            {ans: "Janmasthami", result: false},
+            {ans: "Diwali", result: false},
+        ]
+    },
+    {
+        question: "What is the name of the celestial weapon wielded by Lord Vishnu?",
+        answers: [
+            {ans: "Sudarshana Chakra", result: true},
+            {ans: "Vajra", result: false},
+            {ans: "Spear", result: false},
+            {ans: "Trident", result: false},
+        ]
+    },
+    {
+        question: "Nandi the mount of Shiva is represented by what animal?",
+        answers: [
+            {ans: "Mouse", result: false},
+            {ans: "Monkey", result: false},
+            {ans: "Bull", result: true},
+            {ans: "Lion", result: false},
+        ]
+    },
+    {
+        question: "What is the sacred abode of lord Vishnu?",
+        answers: [
+            {ans: "Ocean", result: true},
+            {ans: "Mars", result: false},
+            {ans: "Himalayas", result: false},
+            {ans: "The Sun", result: false},
+        ]
+    },
+    {
+        question: "Who is the goddess of wealth and prosperity in Hindu Mythology?",
+        answers: [
+            {ans: "Saraswati", result: false},
+            {ans: "Kali", result: false},
+            {ans: "Lakshmi", result: true},
+            {ans: "Parvati", result: false},
+        ]
+    },
+    {
+        question: "What does Krishna adornes on his head gear?",
+        answers: [
+            {ans: "Peacock feather", result: true},
+            {ans: "Gold Leaf", result: false},
+            {ans: "Pearl", result: false},
+            {ans: "Kohinoor Diamond", result: false},
+        ]
+    },
+    {
+        question: "Krishna is beleived to be an incarnation of which god?",
+        answers: [
+            {ans: "Brahma", result: false},
+            {ans: "Shiva", result: false},
+            {ans: "Vishnu", result: true},
+            {ans: "Indra", result: false},
+        ]
+    },
 
 ]
-
-// Randomise the questions in the quiz
-function randomiseQuiz(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-};
-
-let copyQuestions = question.map(obj => {
-    // Create a copy of the object
-    let newObj = {...obj};
-    // If letters is an array, shuffle it
-    if (Array.isArray(obj.letters)) {
-        newObj.letters = randomiseQuiz(obj.letters);
-    }
-    return newObj;
-});
-
-
-console.log(copyQuestions);
 
 const questions = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("ans");
@@ -198,11 +178,14 @@ const nextButton = document.getElementById("next");
 
 // Set initial values for quiz counter to nil
 let currentQuestionCounter = 0;
+let questionNo = 0;
 let score = 0;
 
 function startQuiz() {
     currentQuestionCounter = 0;
+    questionNo = 0;
     score = 0;
+    console.log(currentQuestionCounter);
     nextButton.innerHTML = "Next";
     showQuestion();
     nextButton.style.display = "none";
@@ -210,9 +193,10 @@ function startQuiz() {
 
 function showQuestion() {
 
+    currentQuestionCounter = Math.floor(Math.random() * 9) + 1;
     let questionDisplayed = question[currentQuestionCounter];
     console.log(currentQuestionCounter);
-    let questionNumber = currentQuestionCounter + 1;
+    let questionNumber = questionNo + 1;
     questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
 
     questionDisplayed.answers.forEach((answer, i) => {
@@ -287,10 +271,10 @@ startQuiz();
 
 function nextQuestion() {
     // Move to the next question
-    currentQuestionCounter++;
+    questionNo++;
 
     // If all questions are answered, show score
-    if (currentQuestionCounter >= question.length) {
+    if (questionNo >= 10) {
         questions.innerHTML = "Your score is: " + score + "/" + question.length;
         nextButton.style.display = "none"; // Hide next button
     } else {
@@ -310,6 +294,7 @@ nextButton.addEventListener("click", nextQuestion);
 function resetGame() {
     // Reset current question counter and score
     currentQuestionCounter = 0;
+    questionNo = 0;
     score = 0;
 
     // Show the first question
@@ -328,4 +313,3 @@ function resetGame() {
 
 // Event listener for the reset button
 resetButton.addEventListener("click", resetGame);
-
